@@ -32,14 +32,17 @@ export default class Product extends React.Component {
             this.setState({goldPrice: this.props.goldPrice * this.state.inputValue,
                 retailPrice: this.props.retailPrice * this.state.inputValue});
         }
-        const active = e.target.parentNode.getElementsByClassName('active').item(0);
-        active.classList.remove('active');
-        e.target.classList.add('active');
+        if (!e.target.classList.contains('x')) {
+            const active = e.target.parentNode.getElementsByClassName('active').item(0);
+            active.classList.remove('active');
+            e.target.classList.add('active'); 
+        }
     }
 
     handleInput(e) {
         e.preventDefault();
-        this.setState({inputValue: e.target.value});
+        this.setState({inputValue: e.target.value, goldPrice: this.state.incrementGold * e.target.value,
+            retailPrice: this.state.incrementRetail * e.target.value});
     }
 
     arrowClick(e) {
@@ -74,7 +77,7 @@ export default class Product extends React.Component {
                         По карте клуба: <span>{this.state.goldPrice}</span><span className="icon-rouble"></span><br/>
                         <span className="gray">{this.state.retailPrice}</span><span className="icon-rouble gray"></span>
                     </div>
-                    <div id="select" onClick={this.handleClick}>
+                    <div id="select" className='x' onClick={this.handleClick}>
                         <div className="select m active">За м. кв.</div>
                         <div className="select p">За упаковку</div>
                     </div>

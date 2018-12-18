@@ -3,8 +3,9 @@ body {
 }
 #root {
     margin: 0 auto;
-    width: 1000px;
+    width: 900px;
     box-sizing: border-box;
+    transition: 3s all;
 }
 .product-container {
     border: 1px solid #e0e0e0;
@@ -15,6 +16,11 @@ body {
 .product {
     float: left;
 }
+
+
+/******* FIRST BLOCK ******/
+
+
 .product-photo img {
     margin: 10px;
     max-width: 140px;
@@ -23,36 +29,48 @@ body {
 .product-code {
     font-size: 12px;
     color: #666;
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
+
+
+/******* SECOND BLOCK ******/
+
+
 .second-block {
     float: left;
     margin-left: 1em;
     width: 350px;
 }
 .product-description {
-    margin: 0.5em 0 0 0;
+    margin: 1.5em 0 0 0;
     font-weight: bold;
     width: 400px;
     cursor: pointer;
 }
 .product-keywords {
     float: left;
-    width: 300px;
+    width: 400px;
     font-size: 13px;
     color: #666;
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 .product-keywords span {
     font-weight: bold;
 }
+
+
+/******* THIRD BLOCK ******/
+
+
 .third-block {
-    float: left;
-    width: 400px;
+    float: right;
+    margin-right: 0.5em;
+    width: 300px;
     text-align: right;
 }
 .product-status {
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
     width: 100%;
     color: #093;
     cursor: pointer;
@@ -62,6 +80,7 @@ body {
     border-bottom: 1px dotted #093;
 }
 .product-price {
+    margin-right: -0.5em;
     float: none;
 }
 .product-price span {
@@ -93,15 +112,15 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 75px;
-    right: 13px;
+    bottom: 95px;
+    right: 0.6em;
     margin: 10px 0 5px;
     padding: 5px 10px;
     background: #fff;
     border: 1px solid #ccc;
     font-size: 14px;
     line-height: 14px;
-    height: 50px;
+    height: 40px;
 }
 .help:after {
     border-color: #fff!important;
@@ -128,7 +147,8 @@ body {
 }
 .icon-x {
     display: inline-block;
-    margin:auto 1em;
+    margin:auto 0.5em;
+    margin-right: 1.5em;
     width: 15px;
     height: 15px;
     background: url('../img/unit--i.png') no-repeat;
@@ -142,8 +162,8 @@ body {
     border: 1px solid #ccc;
     height: 40px;
     width: 45px;
-    right: 185px;
-    bottom: 30px;
+    right: 188px;
+    bottom: 45px;
 }
 .product-count input {
     border: none;
@@ -171,7 +191,7 @@ input, textarea {
     height: 50%;
     width: 25px;
     position: absolute;
-    right: -25px;
+    right: -28px;
     border: 1px solid #ccc;
     cursor: pointer;
 }
@@ -196,8 +216,8 @@ input, textarea {
     color: #fff;
     width: 148px;
     position: absolute;
-    right: 10px;
-    bottom: 30px;
+    right: 0.5em;
+    bottom: 45px;
     text-align: left;
 }
 .basket:hover {
