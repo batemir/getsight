@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/batemir/getsight/issues"
   },
-  "homepage": "https://github.com/batemir/getsight#readme",
+  "homepage": "http://getsight-products.surge.sh/",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

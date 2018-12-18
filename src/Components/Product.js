@@ -44,7 +44,6 @@ export default class Product extends React.Component {
 
     arrowClick(e) {
         e.preventDefault();
-        console.log(this.state.retailPrice, this.state.incrementRetail);
         if (e.target.classList.contains('up')) {
             this.setState({inputValue: this.state.inputValue + 1,
             goldPrice: this.state.goldPrice + this.state.incrementGold,
