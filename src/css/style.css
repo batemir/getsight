@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#root {
+    margin: 0 auto;
+    width: 1000px;
+    box-sizing: border-box;
+}
+.product-container {
+    border: 1px solid #e0e0e0;
+    height: 300px;
+    position: relative;
+    margin: 1em auto;
+}
+.product {
+    float: left;
+}
+.product-photo img {
+    margin: 10px;
+    max-width: 140px;
+    min-width: 140px;
+}
+.product-code {
+    font-size: 12px;
+    color: #666;
+    margin-top: 0.5em;
+}
+.second-block {
+    float: left;
+    margin-left: 1em;
+    width: 350px;
+}
+.product-description {
+    margin: 0.5em 0 0 0;
+    font-weight: bold;
+    width: 400px;
+    cursor: pointer;
+}
+.product-keywords {
+    float: left;
+    width: 300px;
+    font-size: 13px;
+    color: #666;
+    margin-top: 1em;
+}
+.product-keywords span {
+    font-weight: bold;
+}
+.third-block {
+    float: left;
+    width: 400px;
+    text-align: right;
+}
+.product-status {
+    margin-top: 0.5em;
+    width: 100%;
+    color: #093;
+    cursor: pointer;
+    text-decoration: none;
+}
+.product-status span {
+    border-bottom: 1px dotted #093;
+}
+.product-price {
+    float: none;
+}
+.product-price span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.gray {
+    opacity: 0.5;
+}
+.select {
+    margin-top: 1em;
+    display: inline-block;
+    color: #707070;
+    border-bottom: 1px dotted #707070;
+    font-size: 0.9em;
+    padding: 5px;
+    cursor: pointer;
+}
+.select:hover {
+    border: none;
+}
+.active {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 75px;
+    right: 13px;
+    margin: 10px 0 5px;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 14px;
+    height: 50px;
+}
+.help:after {
+    border-color: #fff!important;
+    left: 14px;
+    border-left: 7px solid transparent!important;
+    border-right: 7px solid transparent!important;
+}
+.help:before {
+    margin-bottom: -1px;
+    border-color: #ccc;
+    color: #ccc;
+    left: 13px;
+    border-left: 8px solid transparent!important;
+    border-right: 8px solid transparent!important;
+}
+.help:after, .help:before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    border-top: 8px solid;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.icon-x {
+    display: inline-block;
+    margin:auto 1em;
+    width: 15px;
+    height: 15px;
+    background: url('../img/unit--i.png') no-repeat;
+    background-size: contain;
+}
+.help-text{
+    display: inline-block;
+}
+.product-count {
+    position: absolute;
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 45px;
+    right: 185px;
+    bottom: 30px;
+}
+.product-count input {
+    border: none;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0;
+    overflow: hidden;
+    padding: 12px 0 10px;
+    width: 40px;
+    z-index: 49;
+    text-align: center;
+}
+input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.product-count input:focus {
+    border: none;
+    outline: none;
+} 
+.arrow {
+    background: url('../img/count--i.png') no-repeat;
+    display: block;
+    height: 50%;
+    width: 25px;
+    position: absolute;
+    right: -25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.arrow:hover {
+    background-color: #666;
+}
+.up {
+    background-position: -28px 0;
+    border-bottom: none;
+    top: 0;
+}
+.up:hover {background-position: -1px 0;}
+.down {
+    background-position: -28px -20px;
+    bottom: 0;
+}
+.down:hover {background-position: -1px -20px;}
+.basket {
+    cursor: pointer;
+    height: 40px;
+    background: #f90;
+    color: #fff;
+    width: 148px;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    text-align: left;
+}
+.basket:hover {
+    background-color: #333;
+}
+.icon-basket {
+    font-size: 24px;
+    line-height: 40px;
+    padding: 7px;
+}
+.basket span {
+    font-size: 20px;
+}
