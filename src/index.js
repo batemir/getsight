@@ -24,7 +24,7 @@ const run = (data) => {
     ReactDOM.render(tags, root);
 };
 
-fetch('products.json', {method: 'GET'})
+fetch('../products.json', {method: 'GET'})
     .then(res => res.json()).then(data => {
         run(data);
 });
